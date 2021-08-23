@@ -1,0 +1,112 @@
+.pointer {
+    display: inline-block;
+    font-size: 20pt; /*Width of pointer*/
+    width: fit-content;
+    height: 4em;
+    position: relative;
+    background: gray;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0.6em;
+    padding: 0 10px 0 10px;
+  }
+  .pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 1.25em solid white;
+    border-top: 2em solid transparent;
+    border-bottom: 2em solid transparent;
+  }
+  .pointer:before {
+    content: "";
+    position: absolute;
+    right: -1.25em;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 1.25em solid gray;
+    border-top: 2em solid transparent;
+    border-bottom: 2em solid transparent;
+  }
+  
+  .cnt {
+    /* position: relative;
+    top: 0.25em;
+    left: 1em;
+    color: white; */
+    position: relative;
+    /* top: 0.25em; */
+    /* left: 1em; */
+    color: white;
+    padding: 0 15px 0 5px;
+  }
+  .cnt p {
+    /* //font-size:30pt; */
+  }
+  .pointer-text{
+    margin:0
+  }
+  
+  .pointer-mini {
+    /* display: inline-block;
+    font-size: 20pt; 
+    width: 80px;
+    height: 2em;
+    position: relative;
+    background: gray;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0.6em; */
+    display: inline-block;
+    /* font-size: 20pt; */
+    width:fit-content ;
+    height: 27px;
+    position: relative;
+    background: gray;
+    text-align: center;
+    vertical-align: middle;
+    margin: 10px;
+  }
+  .pointer-mini:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    /* border-left: 1.25em solid white;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent; */
+    border-left: 13px solid white;
+    border-top: 13px solid transparent;
+    border-bottom: 14px solid transparent;
+  }
+  .pointer-mini:before {
+    content: "";
+    position: absolute;
+    /* right: -1.25em; */
+    right: -14px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    /* border-left: 1.25em solid gray;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent; */
+    border-left: 14px solid gray;
+    border-top: 13px solid transparent;
+    border-bottom: 14px solid transparent;
+  }
+  
+  .cnt {
+    position: relative;
+    top: 0.25em;
+    left: 1em;
+    color: white;
+  }
+
+
+

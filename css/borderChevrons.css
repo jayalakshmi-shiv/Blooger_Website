@@ -1,0 +1,96 @@
+
+
+.chevron-container {
+  display: flex;
+}
+.chevronWrapper {
+  overflow: hidden;
+  display: block;
+}
+
+.button {
+  width: 110px;
+  height: 19px;
+  font-size: 14px;
+  text-align: center;
+  margin-right: 42px;
+  /* padding: 12px 20px 12px 28px; */
+  padding: 4px 14px 0px 22px;
+  border-color: red;
+  background-color: lightpink;
+  border-width: 2px;
+  border-style: solid;
+  white-space: nowrap;
+  -webkit-transition: border-color 500ms ease, color 250ms ease;
+  -moz-transition: border-color 500ms ease, color 250ms ease;
+  -ms-transition: border-color 500ms ease, color 250ms ease;
+  -o-transition: border-color 500ms ease, color 250ms ease;
+  transition: border-color 500ms ease, color 250ms ease;
+}
+
+.button:before,
+.button:after {
+  border-style: solid;
+  border-color: red;
+  border-width: 0;
+  -webkit-transition: border-color 500ms ease;
+  -moz-transition: border-color 500ms ease;
+  -ms-transition: border-color 500ms ease;
+  -o-transition: border-color 500ms ease;
+  transition: border-color 500ms ease;
+}
+
+/* // Diamond Button */
+
+.dimond {
+  border-width: 2px 0;
+  position: relative;
+  display: block;
+}
+
+.dimond:before {
+  content: "";
+  display: inline-block;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  -o-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  position: absolute;
+  background: white;
+  top: -50%;
+  bottom: 50%;
+  left: 17px;
+  right: 0;
+}
+
+.dimond:after {
+  content: "";
+  display: inline-block;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  -webkit-transform: rotate(-44deg);
+  -moz-transform: rotate(-44deg);
+  -ms-transform: rotate(-44deg);
+  -o-transform: rotate(-44deg);
+  transform: rotate(-44deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  position: absolute;
+  background-color: lightpink;
+  clip-path: polygon(100% 12%, 87% 100%, 100% 100%);
+    right: -14px;   
+  top: -50%;
+  bottom: 50%;
+  left: 0;
+}

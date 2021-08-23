@@ -1,0 +1,64 @@
+body{
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+
+.life-cycle{
+    text-align: center;
+}
+
+.life-cycle ul{
+    list-style:none;
+    display: inline-block;
+}
+.life-cycle ul li{
+    display: inline;
+}
+
+.life-cycle ul li {
+    display:block;
+    float:left;
+    /* height: 50px; */
+    height: 25px;
+    background-color: lightpink;
+    text-align: center;
+    padding: 30px 20px 0 60px;
+    position:relative;
+    margin:0 10px 0 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: black
+}
+
+
+.life-cycle ul li a:after{
+    content: "";
+    /* border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left:40px solid #f3f5fa; */
+    border-top: 27px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-left: 28px solid lightpink;
+    position: absolute;
+    /* right: -40px; */
+    right: -28px;
+
+    top:0;
+    z-index:1;
+}
+
+.life-cycle ul li a:before{
+    content: "";
+    /* border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left:40px solid #fff; */
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-left: 28px solid #fff;
+    position: absolute;
+    left:0;
+    top:0;
+
+}
+
